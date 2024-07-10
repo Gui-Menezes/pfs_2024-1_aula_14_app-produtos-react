@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom"
 import Carrossel from "./components/Carrossel"
 import FormProduto from "./components/FormProduto"
 import ListCardProdutos from "./components/ListCardProdutos"
@@ -13,7 +14,8 @@ function App() {
     		<Carrossel />
 		<div className="w3-row w3-container w3-margin-top">
 			{/* <ListCardProdutos></ListCardProdutos>	 */}
-			<FormProduto></FormProduto>
+			{/* <FormProduto></FormProduto> */}
+			<Outlet></Outlet>
 		</div>
       <footer className="w3-container w3-margin-top w3-black ">
         <p className="w3-center">Realizado por Ries (imagens retiradas de petz.com.br)</p>

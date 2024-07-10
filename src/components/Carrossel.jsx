@@ -26,7 +26,7 @@ export default function Carrossel() {
                 <div className="w3-right w3-hover-text-khaki" onClick={() => plusDiv(1)}>&#10095;</div>
 
             {images.map((image, index) => 
-                <span className="w3-badge demo w3-border w3-transparent w3-hover-white" onClick={() => showDiv(index)}></span>
+                <span key={index} className="w3-badge demo w3-border w3-transparent w3-hover-white" onClick={() => showDiv(index)}></span>
             )}
             </div>
         </div>
